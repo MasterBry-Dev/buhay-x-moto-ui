@@ -77,12 +77,6 @@ const themeConfigSlice = createSlice({
                 state.isDarkMode = false;
             } else if (payload === 'dark') {
                 state.isDarkMode = true;
-            } else if (payload === 'system') {
-                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                    state.isDarkMode = true;
-                } else {
-                    state.isDarkMode = false;
-                }
             }
 
             if (state.isDarkMode) {
@@ -134,7 +128,7 @@ const themeConfigSlice = createSlice({
         },
 
         setPageTitle(state, { payload }) {
-            document.title = `${payload} | VRISTO - Multipurpose Tailwind Dashboard Template`;
+            document.title = `BUHAY X MOTO | ${payload} `;
         },
     },
 });
