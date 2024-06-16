@@ -69,27 +69,29 @@ const Sidebar = () => {
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [location]);
-
+    const iconBg = themeConfig.sidebar === 'dark' ? 'bxm-icon-dark-2.png' : 'bxm-icon-light-2.png';
     return (
         <div className={semidark ? 'dark' : ''}>
             <nav
-                className={`sidebar fixed min-h-screen h-full top-0 bottom-0 w-[260px] shadow-[5px_0_25px_0_rgba(94,92,154,0.1)] z-50 transition-all duration-300 ${semidark ? 'text-white-dark' : ''}`}
+                className={`sidebar fixed min-h-screen h-full top-0 bottom-0 w-[260px] shadow-[5px_0_25px_0_rgba(94,92,154,0.1)]  z-50 transition-all duration-300 ${
+                    semidark ? 'text-white-dark' : ''
+                }`}
             >
-                <div className="bg-white dark:bg-black h-full">
-                    <div className="flex justify-between items-center px-4 py-3">
-                        <NavLink to="/" className="main-logo flex items-center shrink-0">
-                            <img className="w-8 ml-[5px] flex-none" src="/assets/images/logo.svg" alt="logo" />
-                            <span className="text-2xl ltr:ml-1.5 rtl:mr-1.5 font-semibold align-middle lg:inline dark:text-white-light">{t('VRISTO')}</span>
+                <div className="bg-white dark:bg-slate-900 h-full">
+                    <div className="flex justify-between items-center py-6">
+                        <NavLink to="/" className="flex items-center justify-center flex-1">
+                            {/* <img className="w-8 ml-[5px] flex-none" src="/assets/images/logo.svg" alt="logo" /> */}
+                            <img className="" src={`../dist/assets/images/bxm-icon-${themeConfig.theme}-2.png`} alt="logo" />
                         </NavLink>
-
                         <button
                             type="button"
-                            className="collapse-icon w-8 h-8 rounded-full flex items-center hover:bg-gray-500/10 dark:hover:bg-dark-light/10 dark:text-white-light transition duration-300 rtl:rotate-180"
+                            className="collapse-icon rounded-full hover:bg-gray-500/10 dark:hover:bg-dark-light/10 dark:text-white-light transition duration-300 rtl:rotate-180 pe-4"
                             onClick={() => dispatch(toggleSidebar())}
                         >
-                            <IconCaretsDown className="m-auto rotate-90" />
+                            <IconCaretsDown className="rotate-90" />
                         </button>
                     </div>
+
                     <PerfectScrollbar className="h-[calc(100vh-80px)] relative">
                         <ul className="relative font-semibold space-y-0.5 p-4 py-0">
                             <li className="menu nav-item">
