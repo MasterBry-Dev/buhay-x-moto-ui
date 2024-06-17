@@ -32,15 +32,15 @@ const Login = () => {
         <div>
             <div className="relative flex min-h-screen items-center justify-center px-6 py-10 dark:bg-[#060818] sm:px-16">
                 <div className="relative flex w-full max-w-[1502px] flex-col justify-between overflow-hidden rounded-md bg-white/100 backdrop-blur-lg dark:bg-slate-800 lg:min-h-[700px] lg:flex-row lg:gap-10 xl:gap-0 shadow-[10px_0_50px_0_rgba(94,92,154,0.1)] lg:m-10">
-                    <div className="relative hidden w-full items-center justify-center p-5 lg:inline-flex lg:max-w-[800px] xl:-ms-28 ltr:xl:skew-x-[14deg] rtl:xl:skew-x-[-14deg] bg-amber-400">
+                    <div className="relative hidden w-full items-center justify-center p-5 lg:inline-flex lg:max-w-[800px] xl:-ms-28 ltr:xl:skew-x-[14deg] rtl:xl:skew-x-[-14deg] bg-amber-400 dark:bg-white">
                         <div className="absolute inset-y-0 w-8 from-primary/10 via-transparent to-transparent  ltr:xl:-right-20 rtl:xl:-left-20"></div>
                         <div className="ltr:xl:-skew-x-[14deg] rtl:xl:skew-x-[14deg] max-w-[600px] ps-24">
-                            <h1 className="text-4xl font-bold">WELCOME TO</h1>
-                            <img src="../dist/assets/images/bxm-icon-light-4.png" alt="Logo" className="" />
+                            <h1 className="text-4xl font-bold dark:text-dark">WELCOME TO</h1>
+                            <img src={`../dist/assets/images/bxm-icon-${themeConfig.theme}-4.png`} alt="Logo" className="" />
                         </div>
                     </div>
-                    <div className="relative flex w-full flex-col items-center justify-center gap-6 px-4 pb-16 pt-6 sm:px-6 lg:max-w-[667px]">
-                        <div className="w-full max-w-[440px] lg:mt-16">
+                    <div className="relative flex w-full flex-col items-center justify-center gap-6 px-4 pb-16 pt-6 sm:px-6 lg:max-w-[667px] ">
+                        <div className="w-full max-w-[440px] lg:mt-16 ">
                             {' '}
                             <div className="">
                                 <div className="lg:hidden">
