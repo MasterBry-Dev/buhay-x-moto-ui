@@ -63,8 +63,8 @@ const Landing = () => {
             </div>
 
             {/* 2nd section */}
-            <div className="grid xl:grid-cols-1 grid-cols-1 gap-6 shadow-[4px_6px_10px_-3px_#bfc9d4] dark: shadow-none rounded-2xl">
-                <div className=" bg-[#f1f2f3] px-14 py-8  rounded max-w-full dark:bg-slate-800 dark:text-white-light w-full">
+            <div className="grid xl:grid-cols-1 grid-cols-1 gap-6 shadow-[4px_6px_10px_-3px_#bfc9d4] dark: shadow-none rounded-2xl ">
+                <div className=" bg-[#f1f2f3] px-14 py-8  rounded max-w-full dark:bg-slate-900 dark:text-white-light w-full">
                     <h2 className="text-dark mt-4 text-end text-4xl font-bold dark:text-white-light">BECOME PART OF HISTORY!</h2>
                     <p className="lead mt-2 mb-4 text-base dark:text-white-light text-end">Be One of our Pioneer Members!</p>
                     <hr className="my-4 dark:border-[#fafafa]" />
@@ -89,7 +89,7 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="panel rounded-2xl lg:col-span-2 mb-6 mt-6">
+            <div className="panel rounded-2xl lg:col-span-2 mb-6 mt-6 dark:bg-slate-900">
                 <div className="swiper" id="slider5">
                     <div className="swiper-wrapper">
                         <Swiper
@@ -104,7 +104,7 @@ const Landing = () => {
                             breakpoints={{
                                 1024: {
                                     slidesPerView: 4,
-                                    spaceBetween: 5,
+                                    spaceBetween: 10,
                                 },
                                 768: {
                                     slidesPerView: 2,
@@ -122,12 +122,12 @@ const Landing = () => {
                                 return (
                                     <SwiperSlide key={i}>
                                         <a href={item.link} className="block w-full">
-                                            <div className="w-ful bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none mb-8">
-                                                <div className="py-2 px-8">
-                                                    <div className="-mt-7 mb-3 -mx-8 rounded-tl rounded-tr h-[205px] overflow-hidden">
+                                            <div className="w-ful bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-slate-800 dark:shadow-none mb-8">
+                                                <div className="py-2 px-5">
+                                                    <div className="-mt-7 mb-3 -mx-5 rounded-tl rounded-tr h-[180px] overflow-hidden">
                                                         <img src={`../dist/assets/images/${item.src}`} alt="image" className="w-full h-full" />
                                                     </div>
-                                                    <h5 className="text-[#3b3f5c] text-xl font-semibold mb-0 dark:text-white-light mb-3 text-center">{item.label}</h5>
+                                                    <h5 className="text-[#3b3f5c] text-lg font-semibold mb-0 dark:text-white-light mb-3 text-center">{item.label}</h5>
                                                 </div>
                                             </div>
                                         </a>
@@ -139,12 +139,12 @@ const Landing = () => {
                                 return (
                                     <SwiperSlide key={i}>
                                         <a href={item.link} className="block w-full">
-                                            <div className="w-ful bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none mb-8">
+                                            <div className="w-ful bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-slate-800 dark:shadow-none mb-8">
                                                 <div className="py-2 px-8">
                                                     <div className="-mt-7 mb-3 -mx-8 rounded-tl rounded-tr h-[205px] overflow-hidden">
                                                         <img src={`../dist/assets/images/${item.src}`} alt="image" className="w-full h-full" />
                                                     </div>
-                                                    <h5 className="text-[#3b3f5c] text-xl font-semibold mb-0 dark:text-white-light mb-3 text-center">{item.label}</h5>
+                                                    <h5 className="text-[#3b3f5c] text-lg font-semibold mb-0 dark:text-white-light mb-3 text-center">{item.label}</h5>
                                                 </div>
                                             </div>
                                         </a>
