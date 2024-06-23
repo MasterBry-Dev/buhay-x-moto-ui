@@ -37,14 +37,14 @@ const Landing = () => {
     return (
         <>
             <div className=" flex justify-center mb-3">
-                <img src="../dist/assets/images/BXM-header2.png" alt="BXM-Header" className="w-screen lg:px-28 lg:h-56" />
+                <img src="../src/assets/images/BXM-header2.png" alt="BXM-Header" className="w-screen lg:px-28 lg:h-56" />
             </div>
 
             {/* 1st section */}
             <div className="grid xl:grid-cols-3 mb-10">
                 {/* image */}
                 <div className="flex justify-center xl:col-span-1">
-                    <img src="../dist/assets/images/BossTony.png" alt="Boss Tony" className="w-60 lg:w-80" />
+                    <img src="../src/assets/images/BossTony.png" alt="Boss Tony" className="w-60 lg:w-80" />
                 </div>
 
                 {/* description */}
@@ -125,7 +125,7 @@ const Landing = () => {
                                             <div className="w-ful bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-slate-800 dark:shadow-none mb-8">
                                                 <div className="py-2 px-5">
                                                     <div className="-mt-7 mb-3 -mx-5 rounded-tl rounded-tr h-[180px] overflow-hidden">
-                                                        <img src={`../dist/assets/images/${item.src}`} alt="image" className="w-full h-full" />
+                                                        <img src={`../src/assets/images/${item.src}`} alt="image" className="w-full h-full" />
                                                     </div>
                                                     <h5 className="text-[#3b3f5c] text-lg font-semibold mb-0 dark:text-white-light mb-3 text-center">{item.label}</h5>
                                                 </div>
@@ -140,9 +140,9 @@ const Landing = () => {
                                     <SwiperSlide key={i}>
                                         <a href={item.link} className="block w-full">
                                             <div className="w-ful bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-slate-800 dark:shadow-none mb-8">
-                                                <div className="py-2 px-8">
-                                                    <div className="-mt-7 mb-3 -mx-8 rounded-tl rounded-tr h-[205px] overflow-hidden">
-                                                        <img src={`../dist/assets/images/${item.src}`} alt="image" className="w-full h-full" />
+                                                <div className="py-2 px-5">
+                                                    <div className="-mt-7 mb-3 -mx-5 rounded-tl rounded-tr h-[180px] overflow-hidden">
+                                                        <img src={`../src/assets/images/${item.src}`} alt="image" className="w-full h-full" />
                                                     </div>
                                                     <h5 className="text-[#3b3f5c] text-lg font-semibold mb-0 dark:text-white-light mb-3 text-center">{item.label}</h5>
                                                 </div>

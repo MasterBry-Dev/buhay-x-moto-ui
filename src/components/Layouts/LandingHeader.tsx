@@ -34,7 +34,7 @@ const LandingHeader = () => {
                 <div className="">
                     <div className="relative flex w-full items-center px-5 py-2.5">
                         <div className="horizontal-logo flex lg:inline hidden justify-between items-center ltr:mr-2 rtl:ml-2">
-                            <img src={`../dist/assets/images/bxm-icon-${themeConfig.theme}.png`} alt="Boss Tony" className="" />
+                            <img src={`../src/assets/images/bxm-icon-${themeConfig.theme}.png`} alt="Boss Tony" className="" />
                         </div>
 
                         <div className="sm:flex-1 ltr:sm:ml-0 ltr:ml-auto sm:rtl:mr-0 rtl:mr-auto flex items-center space-x-1.5 lg:space-x-2 rtl:space-x-reverse dark:text-[#d0d2d6]">

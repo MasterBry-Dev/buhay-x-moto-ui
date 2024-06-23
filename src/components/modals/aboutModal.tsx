@@ -38,7 +38,7 @@ const AboutModal: React.FC<AboutProps> = ({ ishow, onClose }) => {
                                             <div className="w-full  dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
                                                 <div className="py-7 px-6">
                                                     <div className="-mt-7 mb-7 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                                                        <img src="../../dist/assets/images/BXMHeader.jpg" alt="cover" className="w-full h-full " />
+                                                        <img src="../src/assets/images/BXMHeader.jpg" alt="cover" className="w-full h-full " />
                                                     </div>
                                                     <h5 className="text-[#3b3f5c] text-xl font-semibold mb-4 dark:text-white-light"> BUHAY X MOTO is a motorcycle-themed TV show in the Philippines</h5>
                                                     <hr className="my-4 dark:border-[#fafafa]" />

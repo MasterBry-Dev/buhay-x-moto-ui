@@ -81,7 +81,7 @@ const Sidebar = () => {
                     <div className="flex justify-between items-center py-6">
                         <NavLink to="/" className="flex items-center justify-center flex-1">
                             {/* <img className="w-8 ml-[5px] flex-none" src="/assets/images/logo.svg" alt="logo" /> */}
-                            <img className="" src={`../dist/assets/images/bxm-icon-${themeConfig.theme}-2.png`} alt="logo" />
+                            <img className="" src={`../src/assets/images/bxm-icon-${themeConfig.theme}-2.png`} alt="logo" />
                         </NavLink>
                         <button
                             type="button"

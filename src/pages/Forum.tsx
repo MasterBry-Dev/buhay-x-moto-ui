@@ -20,7 +20,7 @@ const Forum: React.FC<ForumProps> = ({}) => {
         {
             title: 'EVENT: Classic Nights RC250 Bikes Community and BUHAY X MOTO Pre-Launch!',
             body: 'Our pre-launch is happening along with one of the most popular bike groups in the metro! See you there! Feb. 10, 2024 - 88 Fryer, Timog cor. Panay Ave. QC',
-            image: '../dist/assets/images/postsImage.jpg',
+            image: '../src/assets/images/postsImage.jpg',
             date: 'February 04, 2024 ',
         },
         {
@@ -34,17 +34,17 @@ const Forum: React.FC<ForumProps> = ({}) => {
     const rightBarIcons = [
         {
             header: 'Follow Our FB Page',
-            src: '../dist/assets/images/BXMFBpage.png',
+            src: '../src/assets/images/BXMFBpage.png',
             link: 'https://www.facebook.com/profile.php?id=61558962730787',
         },
         {
             header: 'Become a member NOW!',
-            src: '../dist/assets/images/BXMRegistration.png',
+            src: '../src/assets/images/BXMRegistration.png',
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSdADCaQchGJyJaaN63YaiUK3EBgeQ0dqxbNZ2w7-46VhjUnAg/viewform',
         },
         {
             header: 'Our partner channel',
-            src: '../dist/assets/images/pinoyXtreme.png',
+            src: '../src/assets/images/pinoyXtreme.png',
             link: 'https://www.facebook.com/pxtremeofficial/?_rdc=2&_rdr',
         },
     ];

@@ -26,7 +26,7 @@ const Error404 = () => {
             >
                 <div className="relative">
                     <img
-                        src={isDark ? '../dist/assets/images/error/404-dark.svg' : '../dist/assets/images/error/404-light.svg'}
+                        src={isDark ? '../src/assets/images/error/404-dark.svg' : '../src/assets/images/error/404-light.svg'}
                         alt="404"
                         className="mx-auto -mt-10 w-full max-w-xs object-cover md:-mt-14 md:max-w-xl"
                     />
