@@ -1,4 +1,4 @@
-import{u as a,r as o,s as n,a as i,j as e,L as l}from"./index-CwUJNccY.js";const c=()=>{const t=a();o.useEffect(()=>{t(n("Error 404"))});const s=i(r=>r.themeConfig.theme==="dark"||r.themeConfig.isDarkMode);return e.jsx("div",{className:"relative flex min-h-screen items-center justify-center overflow-hidden",children:e.jsx("div",{className:`px-6 py-16 \r
+import{u as a,r as o,s as n,a as i,j as e,L as l}from"./index-Dsgzs39j.js";const c=()=>{const t=a();o.useEffect(()=>{t(n("Error 404"))});const s=i(r=>r.themeConfig.theme==="dark"||r.themeConfig.isDarkMode);return e.jsx("div",{className:"relative flex min-h-screen items-center justify-center overflow-hidden",children:e.jsx("div",{className:`px-6 py-16 \r
             text-center font-semibold \r
             before:container \r
             before:absolute \r
