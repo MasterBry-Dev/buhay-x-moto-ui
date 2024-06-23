@@ -25,7 +25,7 @@ const Login = () => {
     const themeConfig = useSelector((state: IRootState) => state.themeConfig);
 
     const submitForm = () => {
-        navigate('/');
+        navigate('/member-forum');
     };
 
     return (
@@ -36,7 +36,7 @@ const Login = () => {
                         <div className="absolute inset-y-0 w-8 from-primary/10 via-transparent to-transparent  ltr:xl:-right-20 rtl:xl:-left-20"></div>
                         <div className="ltr:xl:-skew-x-[14deg] rtl:xl:skew-x-[14deg] max-w-[600px] ps-24">
                             <h1 className="text-4xl font-bold dark:text-dark">WELCOME TO</h1>
-                            <img src={`../src/assets/images/bxm-icon-${themeConfig.theme}-4.png`} alt="Logo" className="" />
+                            <img src={`/buhay-x-moto-ui/assets/images/bxm-icon-${themeConfig.theme}-4.png`} alt="Logo" className="" />
                         </div>
                     </div>
                     <div className="relative flex w-full flex-col items-center justify-center gap-6 px-4 pb-16 pt-6 sm:px-6 lg:max-w-[667px] ">
@@ -44,7 +44,7 @@ const Login = () => {
                             {' '}
                             <div className="">
                                 <div className="lg:hidden">
-                                    <img src="../src/assets/images/bxm-icon-light-3.png" alt="Logo" className="" />
+                                    <img src="/buhay-x-moto-ui/assets/images/bxm-icon-light-3.png" alt="Logo" className="" />
                                 </div>
                                 <h1 className="text-2xl font-extrabold uppercase !leading-snug text-amber-400 md:text-4xl">Sign in</h1>
                                 <p className="text-sm lg:text-base font-bold leading-normal text-white-dark mb-2 dark:text-white">Enter your email and password to login</p>
@@ -79,7 +79,7 @@ const Login = () => {
                             </div>
                             <div className="text-center dark:text-white">
                                 Don't have an account ?&nbsp;
-                                <Link to="/auth/boxed-signup" className="uppercase text-primary underline transition hover:text-black dark:hover:text-amber-100 dark:text-amber-400">
+                                <Link to="/auth/sign-up" className="uppercase text-primary underline transition hover:text-black dark:hover:text-amber-100 dark:text-amber-400">
                                     SIGN UP
                                 </Link>
                             </div>

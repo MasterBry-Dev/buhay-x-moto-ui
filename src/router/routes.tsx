@@ -8,20 +8,21 @@ const routes = [
     // dashboard
     {
         path: '/',
+        element: <Landing />,
+        layout: 'landing',
+    },
+    {
+        path: '/member-forum',
         element: <Forum />,
         layout: 'default',
     },
     {
-        path: '/*',
+        path: '*',
         element: <Error404 />,
         layout: 'blank',
     },
 
-    {
-        path: '/landing',
-        element: <Landing />,
-        layout: 'landing',
-    },
+    
 
     {
         path: '/auth/login',

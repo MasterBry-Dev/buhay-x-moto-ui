@@ -66,7 +66,7 @@ const Header = () => {
             <div className="">
                 <div className="relative  flex w-full items-center px-5 py-2.5">
                     <div className="horizontal-logo flex lg:hidden justify-between items-center ltr:mr-2 rtl:ml-2">
-                        <img src={`../src/assets/images/bxm-icon-${themeConfig.theme}.png`} alt="Boss Tony"></img>
+                        <img src={`../buhay-x-moto-ui/assets/images/bxm-icon-${themeConfig.theme}.png`} alt="Boss Tony"></img>
                         <button
                             type="button"
                             className="collapse-icon flex-none dark:text-[#d0d2d6] hover:text-primary dark:hover:text-primary flex lg:hidden ltr:ml-2 rtl:mr-2 p-2 rounded-full bg-white-light/40 dark:bg-dark/40 hover:bg-white-light/90 dark:hover:bg-dark/60"
@@ -78,7 +78,7 @@ const Header = () => {
                         </button>
 
                         <Link to="/" className="main-logo flex items-center shrink-0">
-                            <img className="ltr:-ml-1 rtl:-mr-1" src="../src/assets/images/logobxm.svg" alt="logo" />
+                            <img className="ltr:-ml-1 rtl:-mr-1" src="../buhay-x-moto-ui/assets/images/logobxm.svg" alt="logo" />
                         </Link>
                     </div>
 
@@ -120,12 +120,12 @@ const Header = () => {
                                 offset={[0, 8]}
                                 placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
                                 btnClassName="relative group block"
-                                button={<img className="w-9 h-9 rounded-full object-cover saturate-50 group-hover:saturate-100" src="/assets/images/user-profile.jpeg" alt="userProfile" />}
+                                button={<img className="w-9 h-9 rounded-full object-cover saturate-50 group-hover:saturate-100" src="../buhay-x-moto-ui/assets/images/user-profile.jpeg" alt="userProfile" />}
                             >
                                 <ul className="text-dark dark:text-white-dark !py-0 w-[230px] font-semibold dark:text-white-light/90">
                                     <li>
                                         <div className="flex items-center px-4 py-4">
-                                            <img className="rounded-md w-10 h-10 object-cover" src="/assets/images/user-profile.jpeg" alt="userProfile" />
+                                            <img className="rounded-md w-10 h-10 object-cover" src="../srcbuhay-x-moto-ui/assets/images/user-profile.jpeg" alt="userProfile" />
                                             <div className="ltr:pl-4 rtl:pr-4 truncate">
                                                 <h4 className="text-base">
                                                     John Doe

@@ -18,6 +18,8 @@ const finalRoutes = routes.map((route) => {
     };
 });
 
-const router = createBrowserRouter(finalRoutes);
+const router = createBrowserRouter(finalRoutes,{
+    basename: '/buhay-x-moto-ui/'
+});
 
 export default router;

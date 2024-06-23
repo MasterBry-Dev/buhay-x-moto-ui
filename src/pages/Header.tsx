@@ -1,37 +1,22 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { IRootState } from '../../store';
-import { toggleRTL, toggleTheme, toggleSidebar } from '../../store/themeConfigSlice';
+
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
-import Dropdown from '../Dropdown';
-import IconMenu from '../Icon/IconMenu';
-import IconCalendar from '../Icon/IconCalendar';
-import IconEdit from '../Icon/IconEdit';
-import IconChatNotification from '../Icon/IconChatNotification';
-import IconSearch from '../Icon/IconSearch';
-import IconXCircle from '../Icon/IconXCircle';
-import IconSun from '../Icon/IconSun';
-import IconMoon from '../Icon/IconMoon';
-import IconLaptop from '../Icon/IconLaptop';
-import IconMailDot from '../Icon/IconMailDot';
-import IconArrowLeft from '../Icon/IconArrowLeft';
-import IconInfoCircle from '../Icon/IconInfoCircle';
-import IconBellBing from '../Icon/IconBellBing';
-import IconUser from '../Icon/IconUser';
-import IconMail from '../Icon/IconMail';
-import IconLockDots from '../Icon/IconLockDots';
-import IconLogout from '../Icon/IconLogout';
-import IconMenuDashboard from '../Icon/Menu/IconMenuDashboard';
-import IconCaretDown from '../Icon/IconCaretDown';
-import IconMenuApps from '../Icon/Menu/IconMenuApps';
-import IconMenuComponents from '../Icon/Menu/IconMenuComponents';
-import IconMenuElements from '../Icon/Menu/IconMenuElements';
-import IconMenuDatatables from '../Icon/Menu/IconMenuDatatables';
-import IconMenuForms from '../Icon/Menu/IconMenuForms';
-import IconMenuPages from '../Icon/Menu/IconMenuPages';
-import IconMenuMore from '../Icon/Menu/IconMenuMore';
+
+
+
+import Dropdown from '../components/Dropdown';
+import IconMenu from '../components/Icon/IconMenu';
+import { IRootState } from '../store';
+import { toggleSidebar, toggleTheme } from '../store/themeConfigSlice';
+import IconSun from '../components/Icon/IconSun';
+import IconMoon from '../components/Icon/IconMoon';
+import IconUser from '../components/Icon/IconUser';
+import IconMail from '../components/Icon/IconMail';
+import IconLockDots from '../components/Icon/IconLockDots';
+import IconLogout from '../components/Icon/IconLogout';
 
 const Header = () => {
     const location = useLocation();
@@ -66,7 +51,7 @@ const Header = () => {
             <div className="">
                 <div className="relative  flex w-full items-center px-5 py-2.5">
                     <div className="horizontal-logo flex lg:hidden justify-between items-center ltr:mr-2 rtl:ml-2">
-                        <img src={`/buhay-x-moto-ui/src/images/bxm-icon-${themeConfig.theme}.png`} alt="Boss Tony"></img>
+                        <img src={`../buhay-x-moto-ui/images/bxm-icon-${themeConfig.theme}.png`} alt="Boss Tony"></img>
                         <button
                             type="button"
                             className="collapse-icon flex-none dark:text-[#d0d2d6] hover:text-primary dark:hover:text-primary flex lg:hidden ltr:ml-2 rtl:mr-2 p-2 rounded-full bg-white-light/40 dark:bg-dark/40 hover:bg-white-light/90 dark:hover:bg-dark/60"
@@ -78,7 +63,7 @@ const Header = () => {
                         </button>
 
                         <Link to="/" className="main-logo flex items-center shrink-0">
-                            <img className="ltr:-ml-1 rtl:-mr-1" src="/buhay-x-moto-ui/src/images/logobxm.svg" alt="logo" />
+                            <img className="ltr:-ml-1 rtl:-mr-1" src="../buhay-x-moto-ui/images/logobxm.svg" alt="logo" />
                         </Link>
                     </div>
 
@@ -120,12 +105,12 @@ const Header = () => {
                                 offset={[0, 8]}
                                 placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
                                 btnClassName="relative group block"
-                                button={<img className="w-9 h-9 rounded-full object-cover saturate-50 group-hover:saturate-100" src="/assets/images/user-profile.jpeg" alt="userProfile" />}
+                                button={<img className="w-9 h-9 rounded-full object-cover saturate-50 group-hover:saturate-100" src="../buhay-x-moto-ui/assets/images/user-profile.jpeg" alt="userProfile" />}
                             >
                                 <ul className="text-dark dark:text-white-dark !py-0 w-[230px] font-semibold dark:text-white-light/90">
                                     <li>
                                         <div className="flex items-center px-4 py-4">
-                                            <img className="rounded-md w-10 h-10 object-cover" src="/assets/images/user-profile.jpeg" alt="userProfile" />
+                                            <img className="rounded-md w-10 h-10 object-cover" src="../buhay-x-moto-ui/assets/images/user-profile.jpeg" alt="userProfile" />
                                             <div className="ltr:pl-4 rtl:pr-4 truncate">
                                                 <h4 className="text-base">
                                                     John Doe

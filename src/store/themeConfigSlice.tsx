@@ -129,7 +129,7 @@ const themeConfigSlice = createSlice({
         },
 
         setPageTitle(state, { payload }) {
-            document.title = `BUHAY X MOTO | ${payload} `;
+            document.title = `${payload === '' ? 'BUHAY X MOTO' : payload+' | BUHAY X MOTO'}`;
         },
     },
 });

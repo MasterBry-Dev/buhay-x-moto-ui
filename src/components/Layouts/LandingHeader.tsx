@@ -34,11 +34,11 @@ const LandingHeader = () => {
                 <div className="">
                     <div className="relative flex w-full items-center px-5 py-2.5">
                         <div className="horizontal-logo flex lg:inline hidden justify-between items-center ltr:mr-2 rtl:ml-2">
-                            <img src={`../src/assets/images/bxm-icon-${themeConfig.theme}.png`} alt="Boss Tony" className="" />
+                            <img src={`../buhay-x-moto-ui/assets/images/bxm-icon-${themeConfig.theme}.png`} alt="Boss Tony" className="" />
                         </div>
 
-                        <div className="sm:flex-1 ltr:sm:ml-0 ltr:ml-auto sm:rtl:mr-0 rtl:mr-auto flex items-center space-x-1.5 lg:space-x-2 rtl:space-x-reverse dark:text-[#d0d2d6]">
-                            <div className="lg:ltr:mr-auto lg:rtl:ml-auto">
+                        <div className="sm:flex-1 ltr:sm:ml-0 xl:ltr:ml-auto sm:rtl:mr-0 rtl:mr-auto flex items-center space-x-1.5 lg:space-x-2 rtl:space-x-reverse dark:text-[#d0d2d6]">
+                            <div className="flex lg:ltr:mr-auto lg:rtl:ml-auto">
                                 <div className="hidden lg:inline">
                                     {themeConfig.theme === 'light' ? (
                                         <button
@@ -72,15 +72,15 @@ const LandingHeader = () => {
                             </div>
                             <div></div>
 
-                            <div className="flex text-xs lg:text-sm dark:text-white-light">
-                                <span className="cursor-pointer text-dark font-bold dark:text-white-light" onClick={backToTop}>
+                            <div className="flex text-xs lg:text-sm dark:text-white-light justify-center">
+                                <span className="cursor-pointer text-dark font-bold dark:text-white-light ms-3 xl:ms-0" onClick={backToTop}>
                                     HOME
                                 </span>
-                                <span className="ms-3 me-3 cursor-pointer text-dark font-bold dark:text-white-light" onClick={() => showModal()}>
+                                <span className="xl:ms-3 xl:me-3 ms-2 me-2 cursor-pointer text-dark font-bold dark:text-white-light" onClick={() => showModal()}>
                                     ABOUT
                                 </span>
-                                <span className="cursor-pointer text-dark font-bold me-2 dark:text-white-light">CONTACT US</span>
-                                <span className="ms-2 me-5 cursor-pointer text-dark font-bold dark:text-white-light">MEMBERS</span>
+                                <span className="cursor-pointer text-dark font-bold xl:me-2 dark:text-white-light">CONTACT US</span>
+                                <span className="xl:ms-3 xl:me-3 ms-2 me-2 cursor-pointer text-dark font-bold dark:text-white-light">MEMBERS</span>
                                 <NavLink to="/auth/login">
                                     <span className="me-3 cursor-pointer text-dark font-bold dark:text-white-light">FORUM</span>
                                 </NavLink>

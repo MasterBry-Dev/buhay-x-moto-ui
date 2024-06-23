@@ -20,7 +20,7 @@ const Forum: React.FC<ForumProps> = ({}) => {
         {
             title: 'EVENT: Classic Nights RC250 Bikes Community and BUHAY X MOTO Pre-Launch!',
             body: 'Our pre-launch is happening along with one of the most popular bike groups in the metro! See you there! Feb. 10, 2024 - 88 Fryer, Timog cor. Panay Ave. QC',
-            image: '../src/assets/images/postsImage.jpg',
+            image: '../buhay-x-moto-ui/assets/images/postsImage.jpg',
             date: 'February 04, 2024 ',
         },
         {
@@ -34,17 +34,17 @@ const Forum: React.FC<ForumProps> = ({}) => {
     const rightBarIcons = [
         {
             header: 'Follow Our FB Page',
-            src: '../src/assets/images/BXMFBpage.png',
+            src: '../buhay-x-moto-ui/assets/images/BXMFBpage.png',
             link: 'https://www.facebook.com/profile.php?id=61558962730787',
         },
         {
             header: 'Become a member NOW!',
-            src: '../src/assets/images/BXMRegistration.png',
+            src: '../buhay-x-moto-ui/assets/images/BXMRegistration.png',
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSdADCaQchGJyJaaN63YaiUK3EBgeQ0dqxbNZ2w7-46VhjUnAg/viewform',
         },
         {
             header: 'Our partner channel',
-            src: '../src/assets/images/pinoyXtreme.png',
+            src: '../buhay-x-moto-ui/assets/images/pinoyXtreme.png',
             link: 'https://www.facebook.com/pxtremeofficial/?_rdc=2&_rdr',
         },
     ];
@@ -52,16 +52,16 @@ const Forum: React.FC<ForumProps> = ({}) => {
         <div>
             {/* <h1 className="px-24 mb-7 font-bold text-2xl text-amber-400">FORUM</h1> */}
             <div className="flex ">
-                <div className="grid xl:grid-cols-3 ms-28 me-5 gap-5 col-span-3">
+                <div className="grid xl:grid-cols-3 xl:ms-28 xl:me-5 gap-5 col-span-3">
                     {posts.map((posts, index) => {
                         return (
                             <div key={index} className="xl:col-span-3 panel dark:bg-slate-900">
                                 <h2 className="text-dark font-bold text-lg dark:text-white-light">{posts.title}</h2>
-                                {posts.body && <p className="text-base py-10 mx-20 text-center dark:text-white-light">{posts.body}</p>}
+                                {posts.body && <p className="text-base py-10 xl:mx-20 mx-2 text-center dark:text-white-light">{posts.body}</p>}
                                 {posts.video && (
-                                    <div className="flex justify-center py-10">
-                                        <iframe height="400" width="550" className="" src={posts.video}></iframe>
-                                    </div>
+                                   <div className="flex justify-center py-10">
+                                   <iframe height="400" width="550" className="lg:w-3/4 w-80" src={posts.video}></iframe>
+                               </div>
                                 )}
                                 {posts.image && (
                                     <div className="flex justify-center">
