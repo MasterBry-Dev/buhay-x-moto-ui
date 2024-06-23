@@ -9,14 +9,14 @@ function App({ children }: PropsWithChildren) {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        // dispatch(toggleTheme(localStorage.getItem('theme') || themeConfig.theme));
-        // dispatch(toggleMenu(localStorage.getItem('menu') || themeConfig.menu));
-        // dispatch(toggleLayout(localStorage.getItem('layout') || themeConfig.layout));
-        // dispatch(toggleRTL(localStorage.getItem('rtlClass') || themeConfig.rtlClass));
-        // dispatch(toggleAnimation(localStorage.getItem('animation') || themeConfig.animation));
-        // dispatch(toggleNavbar(localStorage.getItem('navbar') || themeConfig.navbar));
-        // dispatch(toggleLocale(localStorage.getItem('i18nextLng') || themeConfig.locale));
-        // dispatch(toggleSemidark(localStorage.getItem('semidark') || themeConfig.semidark));
+        dispatch(toggleTheme(localStorage.getItem('bxm-theme') || themeConfig.theme));
+        dispatch(toggleMenu(localStorage.getItem('bxm-menu') || themeConfig.menu));
+        dispatch(toggleLayout(localStorage.getItem('bxm-layout') || themeConfig.layout));
+        dispatch(toggleRTL(localStorage.getItem('bxm-rtlClass') || themeConfig.rtlClass));
+        dispatch(toggleAnimation(localStorage.getItem('bxm-animation') || themeConfig.animation));
+        dispatch(toggleNavbar(localStorage.getItem('bxm-navbar') || themeConfig.navbar));
+        dispatch(toggleLocale(localStorage.getItem('bxm-i18nextLng') || themeConfig.locale));
+        dispatch(toggleSemidark(localStorage.getItem('bxm-semidark') || themeConfig.semidark));
     }, [dispatch, themeConfig.theme, themeConfig.menu, themeConfig.layout, themeConfig.rtlClass, themeConfig.animation, themeConfig.navbar, themeConfig.locale, themeConfig.semidark]);
 
     return (

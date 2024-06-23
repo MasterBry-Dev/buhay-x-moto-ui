@@ -14,6 +14,7 @@ const defaultState = {
     locale: 'en',
     sidebar: false,
     pageTitle: '',
+    url: 'bxm-',
     languageList: [
         { code: 'zh', name: 'Chinese' },
         { code: 'da', name: 'Danish' },
@@ -35,16 +36,16 @@ const defaultState = {
 };
 
 const initialState = {
-    theme: localStorage.getItem('theme') || themeConfig.theme,
-    menu: localStorage.getItem('menu') || themeConfig.menu,
-    layout: localStorage.getItem('layout') || themeConfig.layout,
-    rtlClass: localStorage.getItem('rtlClass') || themeConfig.rtlClass,
-    animation: localStorage.getItem('animation') || themeConfig.animation,
-    navbar: localStorage.getItem('navbar') || themeConfig.navbar,
-    locale: localStorage.getItem('i18nextLng') || themeConfig.locale,
+    theme: localStorage.getItem(defaultState.url+'theme') || themeConfig.theme,
+    menu: localStorage.getItem(defaultState.url+'menu') || themeConfig.menu,
+    layout: localStorage.getItem(defaultState.url+'layout') || themeConfig.layout,
+    rtlClass: localStorage.getItem(defaultState.url+'rtlClass') || themeConfig.rtlClass,
+    animation: localStorage.getItem(defaultState.url+'animation') || themeConfig.animation,
+    navbar: localStorage.getItem(defaultState.url+'navbar') || themeConfig.navbar,
+    locale: localStorage.getItem(defaultState.url+'i18nextLng') || themeConfig.locale,
     isDarkMode: false,
-    sidebar: localStorage.getItem('sidebar') || defaultState.sidebar,
-    semidark: localStorage.getItem('semidark') || themeConfig.semidark,
+    sidebar: localStorage.getItem(defaultState.url+'sidebar') || defaultState.sidebar,
+    semidark: localStorage.getItem(defaultState.url+'semidark') || themeConfig.semidark,
     languageList: [
         { code: 'zh', name: 'Chinese' },
         { code: 'da', name: 'Danish' },
@@ -71,7 +72,7 @@ const themeConfigSlice = createSlice({
     reducers: {
         toggleTheme(state, { payload }) {
             payload = payload || state.theme; // light | dark | system
-            localStorage.setItem('theme', payload);
+            localStorage.setItem(defaultState.url+'theme', payload);
             state.theme = payload;
             if (payload === 'light') {
                 state.isDarkMode = false;
@@ -88,34 +89,34 @@ const themeConfigSlice = createSlice({
         toggleMenu(state, { payload }) {
             payload = payload || state.menu; // vertical, collapsible-vertical, horizontal
             state.sidebar = false; // reset sidebar state
-            localStorage.setItem('menu', payload);
+            localStorage.setItem(defaultState.url+'menu', payload);
             state.menu = payload;
         },
         toggleLayout(state, { payload }) {
             payload = payload || state.layout; // full, boxed-layout
-            localStorage.setItem('layout', payload);
+            localStorage.setItem(defaultState.url+'layout', payload);
             state.layout = payload;
         },
         toggleRTL(state, { payload }) {
             payload = payload || state.rtlClass; // rtl, ltr
-            localStorage.setItem('rtlClass', payload);
+            localStorage.setItem(defaultState.url+'rtlClass', payload);
             state.rtlClass = payload;
             document.querySelector('html')?.setAttribute('dir', state.rtlClass || 'ltr');
         },
         toggleAnimation(state, { payload }) {
             payload = payload || state.animation; // animate__fadeIn, animate__fadeInDown, animate__fadeInUp, animate__fadeInLeft, animate__fadeInRight, animate__slideInDown, animate__slideInLeft, animate__slideInRight, animate__zoomIn
             payload = payload?.trim();
-            localStorage.setItem('animation', payload);
+            localStorage.setItem(defaultState.url+'animation', payload);
             state.animation = payload;
         },
         toggleNavbar(state, { payload }) {
             payload = payload || state.navbar; // navbar-sticky, navbar-floating, navbar-static
-            localStorage.setItem('navbar', payload);
+            localStorage.setItem(defaultState.url+'navbar', payload);
             state.navbar = payload;
         },
         toggleSemidark(state, { payload }) {
             payload = payload === true || payload === 'true' ? true : false;
-            localStorage.setItem('semidark', payload);
+            localStorage.setItem(defaultState.url+'semidark', payload);
             state.semidark = payload;
         },
         toggleLocale(state, { payload }) {
